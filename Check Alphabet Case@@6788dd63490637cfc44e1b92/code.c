@@ -3,13 +3,16 @@
 int main() {
     char chara;
     scanf("%d", &chara);
-    if (isupper(chara)){
+    if( isupper(chara))
+    {
         printf("Uppercase");
     }
-    else if (islower(chara)){
+    else if (islower(chara))
+    {
         printf("Lowercase");
     }
-    else{
+    else
+    {
         printf("Not an alphabet");
     }
 
