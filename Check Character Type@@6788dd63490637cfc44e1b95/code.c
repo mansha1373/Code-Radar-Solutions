@@ -8,7 +8,7 @@ int main() {
     } 
     else if (isalpha(ch)){
         char lower = tolower(ch);
-        if ( lower == a || lower == e || lower == i || lower == o || lower == u){
+        if ( lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u'){
             printf("Vowel");
         }
         else{
