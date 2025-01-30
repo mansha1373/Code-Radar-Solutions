@@ -6,15 +6,15 @@ int main() {
     {
         printf("A");
     }
-    else if(mark>=80 && mark<90)
+    else if (mark>=80 )
     {
         printf("B");
     }
-    else if(mark>= 70 && mark<80)
+    else if (mark>= 70)
     {
         printf("C");
     }
-    else if(mark>=60 && mark<70 )
+    else if (mark>=60 )
     {
         pritnf("D");
     }
