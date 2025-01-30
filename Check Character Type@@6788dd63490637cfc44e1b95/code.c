@@ -7,7 +7,7 @@ int main() {
         printf("Digit");
     } 
     else if (isalpha(ch)){
-        char lower = tolower(ch)
+        char lower = tolower(ch);
         if ( lower == a || lower == e || lower == i || lower == o || lower == u){
             printf("Vowel");
         }
