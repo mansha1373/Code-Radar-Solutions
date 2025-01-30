@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 int main() {
     int mark;
     scanf("%d", &mark);
@@ -17,5 +18,5 @@ int main() {
     else{
         printf("F");
     }
-    return 0;
+    get ch();
 }
