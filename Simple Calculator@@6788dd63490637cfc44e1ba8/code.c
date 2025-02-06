@@ -17,8 +17,12 @@ int main() {
         printf("%d", ans);
     }
     else if (c == '/'){
-        ans = a/b;
-        printf("%d", ans);
+        if (b!=0){
+            ans = a/b;
+            printf("%d", ans);
+        }else{
+            printf("error");
+        }
     }
     else{
         printf("error");
