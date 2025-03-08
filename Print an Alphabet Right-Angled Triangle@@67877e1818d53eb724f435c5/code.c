@@ -6,8 +6,8 @@ int main(){
     for(i=0; i<n; i++){
         for(j=0; j<=i; j++){
             ch = 'A';
-            printf("%c", ch);
-            ch ++;
+            printf("%c ", ch);
+            ch++;
         }
         printf("\n");
     }
