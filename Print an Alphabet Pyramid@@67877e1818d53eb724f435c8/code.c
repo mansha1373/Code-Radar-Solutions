@@ -10,9 +10,6 @@ int main() {
         for (int j = 1; j <= 2 * i - 1; j++) {
             printf("%c", ch);
             ch++;
-            if (ch > 'Z') {
-                ch = 'A';
-            }
         }
         printf("\n");
     }
