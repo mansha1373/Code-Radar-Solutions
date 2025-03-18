@@ -7,7 +7,8 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int isPrime = 1; 
+    for (int i = 0; i < n; i++) {
+       int isPrime = 1; 
 
         if ( arr[i] <= 1) {
             isPrime = 0; 
@@ -23,6 +24,8 @@ int main(){
         if (isPrime) {
             prime_count++;
         }
+        
+}
     printf("%d", prime_count);
     return 0;
 }
