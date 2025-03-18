@@ -12,7 +12,7 @@ int main(){
            prime_count++;
         }
         else{
-
+           continue;
         }
     }
     printf("%d", prime_count);
