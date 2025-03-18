@@ -20,8 +20,9 @@ int main() {
             min = arr[i];
         }
     }
-    printf("%d\n", max);
-    printf("%d\n", min);
+   
+    printf("%d", min);
+     printf("%d", max);
 
     return 0;
 }
