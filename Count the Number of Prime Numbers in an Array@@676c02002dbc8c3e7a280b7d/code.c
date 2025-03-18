@@ -7,14 +7,22 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    for(i=0; i<n; i++){
-        if(arr[i]%i !=0){
-           prime_count++;
+    int isPrime = 1; 
+
+        if ( arr[i] <= 1) {
+            isPrime = 0; 
+        } else {
+            for (int j = 2; j * j <= num; j++) {
+                if (arr[i] % j == 0) {
+                    isPrime = 0; 
+                    break;
+                }
+            }
         }
-        else{
-           continue;
+
+        if (isPrime) {
+            prime_count++;
         }
-    }
     printf("%d", prime_count);
     return 0;
 }
