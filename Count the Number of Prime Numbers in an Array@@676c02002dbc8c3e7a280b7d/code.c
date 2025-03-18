@@ -16,5 +16,5 @@ int main(){
         }
     }
     printf("%d", prime_count);
-    rewturn 0;
+    return 0;
 }
