@@ -12,10 +12,9 @@ int main(){
                 freq++;
             }
         }
+        printf("%d %d", arr[i], freq);
         }
-        for(i=0;i<n;i++){
-            printf("%d", freq);
-        }
+       
         return 0;
        
     }
