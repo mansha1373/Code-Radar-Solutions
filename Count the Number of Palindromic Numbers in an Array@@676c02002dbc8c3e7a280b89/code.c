@@ -2,14 +2,14 @@
 int palindrome(int n, int arr[]){
     int rev=0, r, count =0;
     int org = arr[i];
-    for(i=0; i<n-1; i++){
+    for(int i=0; i<n-1; i++){
         while(arr[i]!=0){
             r = arr[i]%10;
             rev = rev*10 + r;
             arr[i] = arr[i]/10;
         }
         return rev;
-    if org == rev
+    if (org == rev)
         return count ++;
     else
         return 0;
@@ -21,10 +21,10 @@ int main(){
     scanf("%d", &n);
 
     int arr[n];
-    for(i = 0; i<n; i++){
-        sacnf("%d", &arr[i]);
+    for(int i = 0; i<n; i++){
+        scanf("%d", &arr[i]);
     }
 
-    printf("%d", palindrime(n, arr));
+    printf("%d", palindrome(n, arr));
     return 0;
 }
