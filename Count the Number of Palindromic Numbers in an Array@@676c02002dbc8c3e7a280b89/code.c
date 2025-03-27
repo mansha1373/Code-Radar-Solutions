@@ -1,7 +1,7 @@
 #include<stdio.h>
 int palindrome(int n, int arr[]){
     int rev=0, r, count =0;
-    int org = arr[];
+    int org = arr[n];
     for(int i=0; i<n-1; i++){
         while(arr[i]!=0){
             r = arr[i]%10;
