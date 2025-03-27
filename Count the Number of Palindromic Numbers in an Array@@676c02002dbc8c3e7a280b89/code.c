@@ -1,8 +1,9 @@
 #include<stdio.h>
 int palindrome(int n, int arr[]){
     int rev=0, r, count =0;
-    int org = arr[n];
-    for(int i=0; i<n-1; i++){
+    
+    for(int i=0; i<n; i++){
+        int org = arr[i];
         while(arr[i]!=0){
             r = arr[i]%10;
             rev = rev*10 + r;
@@ -10,11 +11,10 @@ int palindrome(int n, int arr[]){
         }
         return rev;
     if (org == rev)
-        return count ++;
-    else
-        return 0;
+         count ++;
+
     }
-    
+    return count;    
 }
 int main(){
     int n;
