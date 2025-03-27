@@ -4,7 +4,7 @@ int palindrome(int n, int arr[]){
     
     for(int i=0; i<n; i++){
         int rev=0, r;
-        int org = arr[i];
+        int org = arr[i]< 0 ? -arr[i] : arr[i];
         while(arr[i]!=0){
             r = arr[i]%10;
             rev = rev*10 + r;
