@@ -10,7 +10,7 @@ int palindrome(int n, int arr[]){
             arr[i] = arr[i]/10;
         }
     if (org == rev)
-         count ++;
+        count ++;
 
     }
     return count;    
