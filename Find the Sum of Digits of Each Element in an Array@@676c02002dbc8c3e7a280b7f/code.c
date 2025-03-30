@@ -9,8 +9,9 @@ int sum(int n, int arr[]){
             digisum+=r;
             
         }
-        return digisum;
+
     }
+            return digisum;
 
 }
 int main(){
