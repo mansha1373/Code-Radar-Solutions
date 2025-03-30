@@ -9,7 +9,7 @@ int main(){
     int max=-1;
     for(int i=0; i<n; i++){
         if (arr[i]%2==0 && max>arr[i]){
-            max= arr[i],
+            max= arr[i];
             }
         }
         if (max!=-1){
