@@ -1,6 +1,7 @@
 #include<stdio.h>
+#include<stdlib.h>
 int sum(int n, int arr[]){
-   
+   arr[i]= abs(arr[i]);
     for(int i=0; i<n; i++){
         int r;
          int digisum=0;
