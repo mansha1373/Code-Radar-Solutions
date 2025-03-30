@@ -1,6 +1,6 @@
 #include<stdio.h>
 int sum(int n, int arr[]){
-    int digisum=0
+    int digisum=0;
     for(int i=0; i<n; i++){
         int r;
         while(arr[i]!=0){
