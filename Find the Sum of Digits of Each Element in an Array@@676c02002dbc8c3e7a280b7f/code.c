@@ -2,7 +2,7 @@
 int sum(int n, int arr[]){
 
     for(int i=0; i<n; i++){
-        int sum=0; r;
+        int sum=0, r;
         while(arr[i]!=0){
             r = arr[i]%10;
             arr[i]= arr[i]/10;
