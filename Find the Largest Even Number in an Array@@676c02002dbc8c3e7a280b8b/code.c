@@ -12,7 +12,7 @@ int main(){
             max= arr[i];
             }
         }
-        if (max!=-1){
+        if (max!=-100000000){
             printf("%d", max);
         }
         else{
