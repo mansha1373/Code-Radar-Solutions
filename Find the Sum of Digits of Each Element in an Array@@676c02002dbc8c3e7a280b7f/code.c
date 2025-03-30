@@ -10,7 +10,7 @@ int sum(int n, int arr[]){
             digisum+=r;
             
         }
-       return digisum;
+       printf("%d ",digisum);
     }
 
 }
@@ -21,6 +21,6 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);  
 }
-printf("%d", sum(n, arr));
+sum(n, arr);
 return 0;
 }
