@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 int sum(int n, int arr[]){
-    
+    int num = abs(arr[i]);
     for(int i=0; i<n; i++){
         int r;
          int digisum=0;
-        while(arr[i]!=0){
-            r = arr[i]%10;
-            arr[i]= arr[i]/10;
+        while(num!=0){
+            r = num%10;
+            num= num/10;
             digisum+=r;
             
         }
