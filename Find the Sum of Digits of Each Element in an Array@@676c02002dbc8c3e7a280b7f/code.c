@@ -1,15 +1,15 @@
 #include<stdio.h>
 int sum(int n, int arr[]){
-
+    int digisum=0
     for(int i=0; i<n; i++){
-        int sum=0, r;
+        int r;
         while(arr[i]!=0){
             r = arr[i]%10;
             arr[i]= arr[i]/10;
-            sum+=arr[i];
+            digisum+=r;
             
         }
-        return sum;
+        return digisum;
     }
 
 }
