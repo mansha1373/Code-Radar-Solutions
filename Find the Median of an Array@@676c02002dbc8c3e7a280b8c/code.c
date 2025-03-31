@@ -6,8 +6,8 @@ int main(){
    for(int i=0; i<n; i++){
     scanf("%d", &arr[i]);
    } 
+   int sum =0;
    for(int i=0; i<n; i++){
-     int sum =0;
      sum+= arr[i];
    }
    int med= sum/n;
