@@ -24,7 +24,7 @@ int main(){
     }
     
     if(secsmallest(n,arr)){
-        printf("%d", sec_smallest);
+        printf("%d", secsmallest);
     }
     else{
         printf("-1");
