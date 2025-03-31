@@ -2,7 +2,7 @@
 int ascend(int n, int arr[]){
     for(int i=0; i<n; i++){
         if(arr[i]>arr[i+1])
-        return o;
+        return 0;
     }
     return 1;
 
