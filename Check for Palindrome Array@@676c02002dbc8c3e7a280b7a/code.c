@@ -1,6 +1,6 @@
 #include<stdio.h>
 int palindromicArray(int n, int arr[]){
-    for(i=0; i<n/2; i++){
+    for(int i=0; i<n/2; i++){
         if(arr[i]!=arr[n-i-1]){
             return 0;
         }
@@ -11,7 +11,7 @@ int main(){
     int n; 
     scanf("%d", &n);
     int arr[n];
-    for(i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
     if(palindromicArray(n, arr)){
