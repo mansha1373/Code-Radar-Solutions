@@ -10,10 +10,10 @@ void sort(int n, int arr[]){
         }
     }
 }
-void secsmallest(int n, int arr[n]){
+void sec_smallest(int n, int arr[n]){
    sort(n,arr);
-   int sec_smallest = arr[1];
-
+   int smallest_2 = arr[1];
+   printf("%d",smallest_2);
 }
 int main(){
     int n;
@@ -23,12 +23,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     
-    if(secsmallest(n,arr)){
-        printf("%d", secsmallest);
-    }
-    else{
-        printf("-1");
-    }
+    sec_smallest(n, arr);
     return 0;
     
 }
