@@ -5,7 +5,7 @@ void count_freq(int n, int arr[n]){
         freq[arr[i]]++;
     }
     for(int i=0; i<100; i++){
-        if(freq[100]>0){
+        if(freq[i]>0){
             printf("%d %d", i, freq[i]);
         }
     }
