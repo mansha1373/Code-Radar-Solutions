@@ -20,6 +20,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int maxele;
+    int maxfreq;
     max_freq(n, arr, &maxfreq, &maxele);
     printf("%d", maxele);
     
