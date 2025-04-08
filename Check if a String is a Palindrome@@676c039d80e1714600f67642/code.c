@@ -4,14 +4,14 @@ int main(){
     char str[100], reversed[100];
     scanf("%s", str);
     int length = strlen(str);
-    for(int i=length-1; i>=0; i--){
-          reversed[i] = str[i];
+    for(int i=0; i<length; i++){
+          reversed[i] = str[length-i-1];
     }
-
+    reversed ="\0";
     if(strcmp(str, reversed)==0){
-        printf("No");
+        printf("Yes");
     }
     else{
-        printf("Yes");
+        printf("No");
     }
 }
