@@ -7,7 +7,7 @@ int main(){
     for(int i=0; i<length; i++){
           reversed[i] = str[length-i-1];
     }
-    reversed[length]= "\0";
+    reversed[length]= '\0';
     if(strcmp(str, reversed)==0){
         printf("Yes");
     }
