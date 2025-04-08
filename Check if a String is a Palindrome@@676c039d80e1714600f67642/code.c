@@ -4,7 +4,7 @@ int main(){
     char str[100], reversed[100];
     scanf("%s", str);
     int length = strlen(str);
-    for(int i=length-1; i>=n/2; i--){
+    for(int i=length-1; i>=length/2; i--){
           reversed[i] = str[i];
     }
     reversed[length] = '\0';
