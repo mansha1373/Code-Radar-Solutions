@@ -8,9 +8,9 @@ int main(){
           reversed[i] = str[i];
     }
     if(strcmp(str, reversed)==0){
-        printf("NO");
+        printf("No");
     }
     else{
-        printf("YES");
+        printf("Yes");
     }
 }
