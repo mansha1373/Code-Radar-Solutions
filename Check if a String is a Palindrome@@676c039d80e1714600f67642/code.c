@@ -5,7 +5,7 @@ int main(){
     scanf("%s", str);
     int length = strlen(str);
     for(int i=length-1; i>=0; i--){
-         int reversed[i] = str[i];
+          reversed[i] = str[i];
     }
     if(strcmp(str, reversed)=0){
         printf("YES");
