@@ -14,12 +14,21 @@ void sort(int n, int arr[]){
 int main(){
     int n; 
     scanf("%d", &n);
+    if(n<2){
+        printf("-1");
+        return 0;
+    }
     int arr[n];
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
     sort(n, arr);
-   int second_largest = arr[n-2];
+   int second_largest = -1;
+   for(i=n-2; i>=0; i--){
+    if(arr[i]<arr[n-1]){
+        second_largest = arr[i];
+    }
+   }
     printf("%d", second_largest);
     return 0;
 }
