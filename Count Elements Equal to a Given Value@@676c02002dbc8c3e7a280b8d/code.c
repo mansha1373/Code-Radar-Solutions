@@ -1,7 +1,7 @@
 #include<stdio.h>
 int count(int n, int num, int arr[]){
+     int count=0;
     for(int i=0; i<n; i++){
-        int count=0;
         if(arr[i]==num){
             count++;
         }
