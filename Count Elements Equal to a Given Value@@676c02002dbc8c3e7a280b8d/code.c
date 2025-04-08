@@ -1,6 +1,6 @@
-#include<sytdio.h>
+#include<stdio.h>
 int count(int n, int num, int arr[]){
-    for(i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         int count=0;
         if(arr[i]==num){
             count++;
@@ -14,7 +14,7 @@ int main(){
     int num;
     scanf("%d", &num);
     int arr[n];
-    for(i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
     printf("%d", count(n, num, arr));
