@@ -9,9 +9,9 @@ int main(){
     }
 
     if(strcmp(str, reversed)==0){
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
 }
