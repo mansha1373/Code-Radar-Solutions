@@ -10,20 +10,27 @@ void sort(int n, int arr[]){
         }
     }
 }
-void sec_smallest(int n, int arr[n]){
-   sort(n,arr);
-   int smallest_2 = arr[1];
-   printf("%d",smallest_2);
-}
 int main(){
     int n;
     scanf("%d", &n);
+    if(n<2){
+        printf("-1");
+        return 0;
+    }
     int arr[n];
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
     
-    sec_smallest(n, arr);
+    sort(n, arr);
+    int second_smallest = -1;
+    for(int i=0; i<n; i++){
+        if(arr[i]>arr[0]){
+            second_smallest = arr[i];
+            break;
+        }
+    }
+    printf("%d", second_smallest);
     return 0;
     
 }
