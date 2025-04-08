@@ -1,14 +1,13 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[100];
-    scanf("%d", str);
+    char str[100], reeversed[100];
+    scanf("%s", str);
     int length = strlen(str);
-    int original = str;
     for(int i=length-1; i>=0; i--){
-         int reversed[] = str[i];
+         int reversed[i] = str[i];
     }
-    if(reversed == original ){
+    if(strcmp(str, reversed)=0){
         printf("YES");
     }
     else{
