@@ -19,7 +19,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     sort(n, arr);
-    second_largest = arr[n-2];
+   int second_largest = arr[n-2];
     printf("%d", second_largest);
     return 0;
 }
