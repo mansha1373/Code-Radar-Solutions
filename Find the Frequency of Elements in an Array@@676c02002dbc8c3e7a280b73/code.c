@@ -25,6 +25,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     frequencyArray(arr,n);
-return 0;
+
 
 }
