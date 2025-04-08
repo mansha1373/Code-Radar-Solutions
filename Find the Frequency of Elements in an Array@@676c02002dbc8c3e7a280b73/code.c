@@ -1,23 +1,30 @@
-#include<stdio.h>
-void count_freq(int n, int arr[n]){
-    int freq[100] ={0};
-    for(int i=0; i<n; i++){
-        freq[arr[i]]++;
+#include <stdio.h>
+void frequencyArray(int arr[],int n){
+    int visited[n];
+    for(int i=0;i<n;i++){
+        visited[i]=0;
     }
-    for(int i=0; i<100; i++){
-        if(freq[i]>0){
-            printf("%d %d\n", i, freq[i]);
+    for(int i=0;i<n;i++){
+        if(visited[i]==1)continue;
+        int count=0;
+        for(int j=0;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                visited[j]=1;
+            }
         }
+        printf("%d %d\n",arr[i],count);
     }
 }
 int main(){
-    int n; 
-    scanf("%d", &n);
+    int n;
+    scanf("%d",&n);
     int arr[n];
-    for(int i=0; i<n; i++){
-         scanf("%d", &arr[i]);
+    int freq[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-    count_freq(n,arr);
-    return 0;
-   
+    frequencyArray(arr,n);
+    return 0;
+
 }
