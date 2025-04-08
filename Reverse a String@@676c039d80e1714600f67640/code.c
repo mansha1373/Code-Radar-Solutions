@@ -5,7 +5,7 @@ int main(){
     scanf("%s", str);
     int length = strlen(str);
 
-    for(i=length-1; i>=0; i--){
+    for(int i=length-1; i>=0; i--){
         printf("%c", str[i]);
     }
 }
